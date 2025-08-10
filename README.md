@@ -9,6 +9,19 @@ It covers:
 
 ---
 
+
+ServiceNow Incident Management
+   ↓
+onLoad() Client Script → Form Load Event → Display Alert: "Form Ready"
+
+ServiceNow Incident Management
+   ↓
+onCellEdit() Client Script → List View Inline Edit → New State Value?
+      ├─ Resolved (6) → Block Change + Show Alert
+      ├─ Closed (7)   → Block Change + Show Alert
+      └─ Other        → Allow Save
+
+
 ##  Case Study Cover Diagram
 ```mermaid
 flowchart TD
