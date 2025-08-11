@@ -127,6 +127,7 @@ If new value is Resolved (6) or Closed (7), an alert appears.
 
 Save action is prevented for the edit.
 
+![onCellEdit to chnage cell to resolved alert]()
 
 2. Generate onLoad Alert (Screenshot 2)
 Purpose:
