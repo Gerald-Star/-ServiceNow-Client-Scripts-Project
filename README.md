@@ -54,8 +54,6 @@ Time-bound:
 Developed and tested in the ServiceNow training instance.
 
 
-
-
 ## Key Definitions
 
 ### **Client Script**
@@ -118,6 +116,7 @@ function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
 
     callback(saveAndClose);
 }
+```
 
 
 ## What Happens:
