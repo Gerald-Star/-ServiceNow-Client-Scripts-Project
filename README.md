@@ -155,7 +155,7 @@ When the Incident form opens:
 
 An alert is displayed to the user confirming the form is ready.
 
-![Incident Form]()
+![Incident Form](https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/blob/main/3.%20Opens%20any%20incident%20record%20to%20see%20that%20alert%20created.png?raw=true)
 
 
 3. Incident List View with onCellEdit in Action (Screenshot 3)
@@ -176,7 +176,7 @@ Inline edit is blocked for restricted states.
 
 Encourages users to open the full record for such changes.
 
-
+![onCellEdit cannot change the state to closed]()
 
 Flow Diagrams
 onLoad() Flow
