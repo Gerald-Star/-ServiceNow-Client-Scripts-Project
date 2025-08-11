@@ -176,7 +176,7 @@ Inline edit is blocked for restricted states.
 
 Encourages users to open the full record for such changes.
 
-![onCellEdit cannot change the state to closed]()
+![onCellEdit cannot change the state to closed](https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/blob/main/4%20onCellEdit%20you%20cannot%20change%20the%20State%20to%20Closed.png?raw=true)
 
 Flow Diagrams
 onLoad() Flow
