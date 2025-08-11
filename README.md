@@ -1,10 +1,8 @@
-# ServiceNow Client Scripts Project
+# ServiceNow Incident Management - Client Script Flow
 
 ## Project Overview
 This project demonstrates the creation and execution of ServiceNow **Client Scripts** to enforce specific behaviors and restrictions in the **Incident** table.  
 It covers:
-
-# ServiceNow Incident Management - Client Script Flow
 
 ServiceNow Incident Management
    │
