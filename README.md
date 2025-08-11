@@ -4,7 +4,10 @@
 This project demonstrates the creation and execution of ServiceNow **Client Scripts** to enforce specific behaviors and restrictions in the **Incident** table.  
 It covers:
 
-ServiceNow Incident Management
+![ServiceNow Client Script Flow](assets/diagram.png)
+
+
+## ServiceNow Incident Management
    │
    ├─ onLoad() Client Script
    │      → Form Load Event
