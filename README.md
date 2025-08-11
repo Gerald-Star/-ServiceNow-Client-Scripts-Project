@@ -118,7 +118,6 @@ function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
 }
 ```
 
-
 ## What Happens:
 
 When a user edits the State column in the list:
@@ -127,7 +126,7 @@ If new value is Resolved (6) or Closed (7), an alert appears.
 
 Save action is prevented for the edit.
 
-![onCellEdit to chnage cell to resolved alert]()
+![onCellEdit to chnage cell to resolved alert](https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/blob/main/3%20onCellEdit%20to%20change%20state%20to%20resolved%20alert%20opens.png?raw=true)
 
 2. Generate onLoad Alert (Screenshot 2)
 Purpose:
