@@ -143,11 +143,12 @@ Type: onLoad
 Description: Generates an alert when form loads.
 
 Script Logic:
+```javascript
 
 function onLoad() {
     alert("The form has finished loading and is ready for user input.");
 }
-
+```
 
 ### What Happens:
 
@@ -168,7 +169,9 @@ Navigate to Incident List View.
 
 Attempt to change the State column directly to Resolved or Closed.
 
+```pqsql
 The onCellEdit Client Script triggers an alert and prevents the update.
+```
 
 Outcome:
 
