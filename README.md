@@ -4,6 +4,22 @@
 This project demonstrates the creation and execution of ServiceNow **Client Scripts** to enforce specific behaviors and restrictions in the **Incident** table.  
 It covers:
 
+# ServiceNow Incident Management - Client Script Flow
+
+ServiceNow Incident Management
+   │
+   ├─ onLoad() Client Script
+   │      → Form Load Event
+   │      → Display Alert: "Form Ready"
+   │
+   └─ onCellEdit() Client Script
+          → List View Inline Edit
+          → New State Value?
+               ├─ Resolved (6) → Block Change + Show Alert
+               ├─ Closed (7)   → Block Change + Show Alert
+               └─ Other        → Allow Save
+
+
 1. Creating an **onLoad() Client Script** to display an alert when an Incident form is fully loaded.
 2. Creating an **onCellEdit() Client Script** to prevent setting the **State** of an Incident to `Resolved` or `Closed` directly from a **List View**.
 
