@@ -259,7 +259,9 @@ Action: In Incident List View, inline-edit the State column to Resolved.
 
 Expected Result: Alert appears:
 
-You cannot change the state to 'Resolved' from the list
+```pqsql
+You cannot change the state to 'Resolved' from the list.
+```
 
 Change is not saved.
 
@@ -272,7 +274,9 @@ Action: In Incident List View, inline-edit the State column to Closed.
 
 Expected Result: Alert appears:
 
-You cannot change the state to 'Close' from the list
+```pqsql
+You cannot change the state to 'Close' from the list.
+```
 
 Change is not saved.
 
