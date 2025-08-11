@@ -200,7 +200,7 @@ flowchart TD
     E --> G[Save change]
 
 
-Sequence Diagrams
+S## Sequence Diagrams
 onLoad() Sequence
 
 sequenceDiagram
@@ -217,7 +217,7 @@ sequenceDiagram
 onCellEdit() Sequence
 
 
-sequenceDiagram
+### sequenceDiagram
     participant User
     participant Browser
     participant ServiceNow
@@ -234,9 +234,10 @@ sequenceDiagram
 
 
 
-Testing
-Testing onLoad() Script
-Test Case 1: Form Load Alert
+### Testing
+
+**Testing onLoad() Script**
+**Test Case 1: Form Load Alert**
 
 Action: Open any Incident record in form view.
 
@@ -248,14 +249,12 @@ The form has finished loading and is ready for user input.
 Status: ✅ Passed.
 
 
-Testing onCellEdit() Script
-Test Case 2: Prevent State Change to Resolved
+**Testing onCellEdit() Script**
+**Test Case 2: Prevent State Change to Resolved**
 
 Action: In Incident List View, inline-edit the State column to Resolved.
 
 Expected Result: Alert appears:
-
-
 
 You cannot change the state to 'Resolved' from the list
 
@@ -263,13 +262,12 @@ Change is not saved.
 
 Status: ✅ Passed.
 
-Test Case 3: Prevent State Change to Closed
+
+**Test Case 3: Prevent State Change to Closed**
 
 Action: In Incident List View, inline-edit the State column to Closed.
 
 Expected Result: Alert appears:
-
-
 
 You cannot change the state to 'Close' from the list
 
@@ -277,7 +275,8 @@ Change is not saved.
 
 Status: ✅ Passed.
 
-Test Case 4: Allow Other State Changes
+
+**Test Case 4: Allow Other State Changes**
 
 Action: In Incident List View, inline-edit the State column to any value other than Resolved or Closed.
 
@@ -287,12 +286,12 @@ Status: ✅ Passed.
 
 
 
-Potential Improvements
-Replace Alerts with UI Notifications
+### Potential Improvements
+**Replace Alerts with UI Notifications**
 
 Instead of using alert(), use ServiceNow’s g_form.addInfoMessage() for a less intrusive user experience.
 
-Role-Based Restrictions
+**Role-Based Restrictions**
 
 Allow certain roles (e.g., admin, itil_admin) to bypass restrictions.
 
@@ -300,14 +299,14 @@ Multi-Language Support
 
 Display messages in the user’s preferred language using ServiceNow’s gs.getMessage() function.
 
-Logging
+**Logging**
 
 Log blocked changes for auditing purposes using server-side logging or business rules.
 
-Dynamic Configuration
+**Dynamic Configuration**
 
 Store restricted state IDs in a system property so they can be updated without modifying the script.
 
-Author: Gerald Chima Ukwuoma
+**Author: Gerald Chima Ukwuoma**
 Developed in a ServiceNow training lab environment to demonstrate client-side scripting skills.
 
