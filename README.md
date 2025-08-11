@@ -4,7 +4,9 @@
 This project demonstrates the creation and execution of ServiceNow **Client Scripts** to enforce specific behaviors and restrictions in the **Incident** table.  
 It covers:
 
-![ServiceNow Client Script Flow](assets/diagram.png)
+![ServiceNow Client Script Flow](https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/issues/1#issue-3308151475)
+
+https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/issues/1#issue-3308151475
 
 
 ## ServiceNow Incident Management
