@@ -155,23 +155,7 @@ When the Incident form opens:
 
 An alert is displayed to the user confirming the form is ready.
 
-3. Incident List View with onCellEdit in Action (Screenshot 3)
-Purpose:
-To demonstrate the onCellEdit restriction in a real environment.
-
-Steps:
-
-Navigate to Incident List View.
-
-Attempt to change the State column directly to Resolved or Closed.
-
-The onCellEdit Client Script triggers an alert and prevents the update.
-
-Outcome:
-
-Inline edit is blocked for restricted states.
-
-Encourages users to open the full record for such changes.
+![Incident Form]()
 
 
 3. Incident List View with onCellEdit in Action (Screenshot 3)
