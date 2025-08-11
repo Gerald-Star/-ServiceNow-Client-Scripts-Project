@@ -6,16 +6,17 @@ It covers:
 
 ![ServiceNow Client Script Flow](https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/blob/main/SN%20Incident%20Management%20Client%20Flow.png?raw=true)
 
-https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/issues/1#issue-3308151475
-
 
 ## ServiceNow Incident Management
    │
-   ├─ onLoad() Client Script
+   ├─ onLoad() Client Script → Form Load Event → Display Alert: "Form Ready"
    │      → Form Load Event
    │      → Display Alert: "Form Ready"
+   |
+   |     ServiceNow Incident Management
+   |      ↓
    │
-   └─ onCellEdit() Client Script
+   └─ onCellEdit() Client Script → List View Inline Edit → New State Value?
           → List View Inline Edit
           → New State Value?
                ├─ Resolved (6) → Block Change + Show Alert
@@ -27,36 +28,6 @@ https://github.com/Gerald-Star/-ServiceNow-Client-Scripts-Project/issues/1#issue
 2. Creating an **onCellEdit() Client Script** to prevent setting the **State** of an Incident to `Resolved` or `Closed` directly from a **List View**.
 
 ---
-
-
-ServiceNow Incident Management
-   ↓
-onLoad() Client Script → Form Load Event → Display Alert: "Form Ready"
-
-ServiceNow Incident Management
-   ↓
-onCellEdit() Client Script → List View Inline Edit → New State Value?
-      ├─ Resolved (6) → Block Change + Show Alert
-      ├─ Closed (7)   → Block Change + Show Alert
-      └─ Other        → Allow Save
-
-
-##  Case Study Cover Diagram
-```mermaid
-flowchart TD
-    A[ServiceNow Incident Management] --> B[onLoad() Client Script]
-    A --> C[onCellEdit() Client Script]
-
-    B --> D[Form Load Event]
-    D --> E[Display Alert: "Form Ready"]
-
-    C --> F[List View Inline Edit]
-    F --> G{New State Value?}
-    G -->|Resolved (6)| H[Block Change + Show Alert]
-    G -->|Closed (7)| I[Block Change + Show Alert]
-    G -->|Other| J[Allow Save]
-
-
 
 ## SMART Objectives
 ### Specific:
